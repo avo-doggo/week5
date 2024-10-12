@@ -1,0 +1,286 @@
+/* General body styling with black background */
+html, body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff;            /* White text for readability */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+main {
+    flex: 1;
+    width: 100%; /* Ensure main content does not overflow horizontally */
+}
+
+/* Header styling with a pop of color (example: red) */
+header {
+    background-color: #ff4c4c; /* Red background for the header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Yellow on hover for a contrasting color */
+}
+
+/* Featured Art Section */
+.featured-art {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #333333; /* Darker gray section background */
+}
+
+.featured-item {
+    width: 30%;
+    background-color: #1a1a1a; /* Slightly lighter black for cards */
+    border: 2px solid #ff4c4c; /* Red border */
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.featured-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.featured-item h3 {
+    font-size: 1.2em;
+    color: #ffcc00; /* Yellow for headings */
+}
+
+.featured-item p {
+    color: #ffffff; /* Keep the text white */
+}
+
+.featured-item small {
+    font-size: 0.8em;
+    color: #999999; /* Subtle gray for date */
+}
+
+.featured-item:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333333;  /* Dark background for footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Buttons or interactive elements */
+button, a.button {
+    background-color: #ff4c4c; /* Red button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, a.button:hover {
+    background-color: #ffcc00; /* Yellow on hover */
+}
+/* Blog Page Styles */
+.blog-post {
+    background-color: #1a1a1a; /* Dark background for blog posts */
+    border: 1px solid #ff4c4c; /* Red border for blog posts */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    color: #ffffff; /* White text */
+}
+
+.blog-post img {
+    max-width: 60%;  /* Set a maximum width for blog images */
+    height: auto;     /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+    display: block;    /* Center the image */
+    margin: 0 auto;    /* Center the image in its container */
+}
+
+.blog-post h2 {
+    color: #ffcc00; /* Yellow for post titles */
+}
+
+.blog-post p {
+    color: #ffffff; /* White text for paragraph */
+}
+
+.blog-post small {
+    color: #999999; /* Subtle gray for date */
+}
+
+/* Main Commission Section */
+.commission-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 20px;
+    padding: 40px;
+}
+
+.commission-info .commission-item:nth-child(5) {
+    grid-column: 1 / -1; /* Span the entire row for the last item */
+}
+
+.commission-item {
+    background-color: transparent; /* No background or border */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.commission-item img {
+    max-width: 70%;  /* Larger image size */
+    height: auto;    /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.commission-item h3 {
+    color: #ffcc00; /* Yellow for section titles */
+    margin-top: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-section h1 {
+    color: #ffcc00; /* Yellow title */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 18px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #ff4c4c;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4c4c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ffcc00; /* Yellow hover */
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links h3 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-section h1 {
+    color: #ffcc00; /* Yellow title */
+    margin-bottom: 40px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffcc00; /* Yellow border around the image */
+}
+
+.about-bio {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-bio p {
+    font-size: 18px;
+    line-height: 1.6;
+}
